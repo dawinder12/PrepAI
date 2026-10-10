@@ -1,0 +1,33 @@
+from app.models.models import (
+    User,
+    Resume,
+    CandidateProfile,
+    JobDescription,
+    SkillGap,
+    PreparationPlan,
+    PreparationTopic,
+    Document,
+    DocumentChunk,
+    InterviewSession,
+    InterviewQuestion,
+    InterviewAnswer,
+    AnswerEvaluation,
+    ProgressRecord,
+)
+
+__all__ = [
+    "User",
+    "Resume",
+    "CandidateProfile",
+    "JobDescription",
+    "SkillGap",
+    "PreparationPlan",
+    "PreparationTopic",
+    "Document",
+    "DocumentChunk",
+    "InterviewSession",
+    "InterviewQuestion",
+    "InterviewAnswer",
+    "AnswerEvaluation",
+    "ProgressRecord",
+]

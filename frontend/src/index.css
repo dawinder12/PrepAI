@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #eef2ff;
+    --text-primary: #090d16;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --border-subtle: #e2e8f0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.015em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Space Grotesk', 'Outfit', sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Custom subtle utility styles */
+.subtle-border {
+  border: 1px solid #e2e8f0;
+}
+
+.subtle-shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+.glow-subtle {
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.1), 0 4px 12px rgba(99, 102, 241, 0.08);
+}
